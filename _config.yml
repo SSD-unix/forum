@@ -1,0 +1,4 @@
+title: "My Forum"
+theme: minima
+plugins:
+  - jekyll-feed

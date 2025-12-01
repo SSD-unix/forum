@@ -20,3 +20,11 @@ title: Forum
   <textarea name="message" placeholder="Your message" required></textarea><br>
   <button type="submit">Send</button>
 </form>
+<h2>Messages:</h2>
+<ul>
+{% for msg in site.data.messages %}
+  <li>
+    <b>{{ msg[1].name }}</b>: {{ msg[1].message }}
+  </li>
+{% endfor %}
+</ul>
